@@ -55,9 +55,9 @@ body.maxi-standalone {background:#fbfaf7; color:#2b2925; font:94% Georgia,Tahoma
 .maxi-standalone a {color:#6b1f1f;}
 .maxi-shell {max-width:960px; margin:0 auto; padding:24px 24px 54px;}
 .maxi-topbar {display:flex; align-items:center; justify-content:space-between; gap:24px; padding:0 0 18px; border-bottom:1px solid #e8dfd3;}
-.maxi-wordmark {display:inline-flex; align-items:center; gap:10px; color:#5a1818; font-size:1.45em; font-family:Georgia,serif;}
+.maxi-wordmark {display:inline-flex; align-items:center; gap:12px; color:#5a1818; font-size:1.6em; font-family:Georgia,serif;}
 .maxi-wordmark:hover {text-decoration:none;}
-.maxi-wordmark img {display:block; width:42px; height:42px; object-fit:contain;}
+.maxi-wordmark img {display:block; width:52px; height:52px; object-fit:contain;}
 .maxi-nav {display:flex; gap:22px; font-size:1.02em;}
 .maxi-nav a {padding:4px 0; color:#5a1818; border-bottom:1px solid transparent;}
 .maxi-nav a:hover {border-bottom-color:#6b1f1f; text-decoration:none;}
