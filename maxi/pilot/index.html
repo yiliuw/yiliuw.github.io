@@ -6,17 +6,95 @@
 	<meta name="robots" content="noindex, nofollow, noarchive" />
 	<meta name="googlebot" content="noindex, nofollow, noarchive" />
 	<link rel="canonical" href="https://maxiforpets.com/pilot/" />
-	<title>Redirecting to Maxi</title>
-	<script>
-		window.location.replace(
-			"https://maxiforpets.com/pilot/" + window.location.search + window.location.hash
-		);
-	</script>
+	<title>Redirecting to Maxi's official website</title>
+	<style>
+		* {box-sizing:border-box;}
+		html, body {min-height:100%;}
+		body {
+			margin:0;
+			background:#fbfaf7;
+			color:#2b2925;
+			font:16px/1.6 Georgia, "Times New Roman", serif;
+		}
+		.redirect-shell {
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			min-height:100vh;
+			padding:32px 20px;
+		}
+		.redirect-panel {
+			width:100%;
+			max-width:620px;
+			padding:44px 42px;
+			background:#fffdf9;
+			border:1px solid #e8dfd3;
+			border-top:4px solid #5a1818;
+			border-radius:6px;
+			box-shadow:0 14px 36px rgba(45,34,25,0.06);
+		}
+		.wordmark {margin:0 0 34px; color:#5a1818; font-size:1.55rem;}
+		.eyebrow {
+			margin:0 0 10px;
+			color:#6b1f1f;
+			font-size:0.78rem;
+			font-weight:bold;
+			text-transform:uppercase;
+			letter-spacing:0.08em;
+		}
+		h1 {margin:0 0 18px; color:#243323; font-size:2.35rem; font-weight:400; line-height:1.12;}
+		.explanation {margin:0 0 24px; color:#4b4640; font-size:1.04rem;}
+		.destination {
+			display:block;
+			margin:0 0 28px;
+			padding:14px 16px;
+			background:#fbfaf7;
+			border:1px solid #e2d9ce;
+			border-radius:4px;
+			color:#5a1818;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:0.96rem;
+			word-break:break-word;
+		}
+		.progress {height:3px; margin:0 0 22px; overflow:hidden; background:#eadfd6;}
+		.progress span {display:block; width:100%; height:100%; background:#5a1818; transform-origin:left; animation:redirect-progress 1.8s linear both;}
+		.continue {color:#5a1818; font-family:Arial, Helvetica, sans-serif; font-size:0.92rem;}
+		.continue:hover {text-decoration:none;}
+		.company {margin:36px 0 0; color:#777068; font-size:0.82rem;}
+		@keyframes redirect-progress {from {transform:scaleX(0);} to {transform:scaleX(1);}}
+		@media (prefers-reduced-motion:reduce) {.progress span {animation:none;}}
+		@media (max-width:520px) {
+			.redirect-panel {padding:34px 26px;}
+			h1 {font-size:1.95rem;}
+		}
+	</style>
 	<noscript>
-		<meta http-equiv="refresh" content="0; url=https://maxiforpets.com/pilot/" />
+		<meta http-equiv="refresh" content="5; url=https://maxiforpets.com/pilot/" />
 	</noscript>
 </head>
 <body>
-	<p>Redirecting to <a href="https://maxiforpets.com/pilot/">Maxi's pilot page</a>&hellip;</p>
+	<main class="redirect-shell">
+		<section class="redirect-panel" aria-labelledby="redirect-heading">
+			<p class="wordmark">Maxi</p>
+			<p class="eyebrow">Official website transition</p>
+			<h1 id="redirect-heading">Redirecting to Maxi's new domain</h1>
+			<p class="explanation">This former Maxi page is maintained to forward visitors using previously printed QR codes. You are being redirected to Maxi's official pilot page.</p>
+			<a id="redirect-destination" class="destination" href="https://maxiforpets.com/pilot/">https://maxiforpets.com/pilot/</a>
+			<div class="progress" aria-hidden="true"><span></span></div>
+			<a id="redirect-now" class="continue" href="https://maxiforpets.com/pilot/">Continue to Maxi now</a>
+			<p class="company">Maxi Intelligence, Inc. &middot; Greater Seattle</p>
+		</section>
+	</main>
+	<script>
+		(function () {
+			"use strict";
+			var destination = "https://maxiforpets.com/pilot/" + window.location.search + window.location.hash;
+			document.getElementById("redirect-destination").href = destination;
+			document.getElementById("redirect-now").href = destination;
+			window.setTimeout(function () {
+				window.location.replace(destination);
+			}, 1800);
+		}());
+	</script>
 </body>
 </html>
